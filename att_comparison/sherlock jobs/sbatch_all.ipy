@@ -1,0 +1,40 @@
+options = []
+# main
+options.append(["exp", "data/generated/exp_generated.feather",  "att_comparison/generated/exp_generated.feather"])
+options.append(["psid", "data/generated/psid_generated.feather",  "att_comparison/generated/psid_generated.feather"])
+options.append(["cps", "data/generated/cps_generated.feather",  "att_comparison/generated/cps_generated.feather"])
+
+# arch
+for i in range(1, 3):
+    options.append(["cps", f"data/generated/robustness/tbl_arch/arch{i}_generated.feather", f"att_comparison/generated/robustness/tbl_arch/arch{i}_generated.feather"])
+    
+# cv
+for i in range(10):
+    options.append(["cps", f"data/generated/robustness/tbl_cv/cps{i}_generated.feather",
+                    f"att_comparison/generated/robustness/tbl_cv/cps{i}_generated.feather"])
+
+# size
+for i in range(2, 10):
+    options.append(["cps", f"data/generated/robustness/tbl_size/cps{i*10.0}_generated.feather",
+                    f"att_comparison/generated/robustness/tbl_size/cps{i*10.0}_generated.feather"])
+
+%cd /home/users/metzgerj
+
+for dtype, inpath, outpath in options:
+    %env INPUTDTYPE=$dtype
+    %env INPUTPATH=$inpath
+    %env OUTPUTPATH=$outpath
+    cmd = "sbatch $GROUP_HOME/metzgerj/github/design-of-simulations/att_comparison/sherlock\ jobs/run_generic.sh"
+    #!$cmd
+
+    
+options = []
+options.append(["exp", "data/original_data/exp_merged.feather",  "att_comparison/original_data/exp_merged.feather"])
+options.append(["psid", "data/original_data/psid_merged.feather",  "att_comparison/original_data/psid_merged.feather"])
+options.append(["cps", "data/original_data/cps_merged.feather",  "att_comparison/original_data/cps_merged.feather"])
+for dtype, inpath, outpath in options:
+    %env INPUTDTYPE=$dtype
+    %env INPUTPATH=$inpath
+    %env OUTPUTPATH=$outpath
+    cmd = "sbatch $GROUP_HOME/metzgerj/github/design-of-simulations/att_comparison/sherlock\ jobs/run_original.sh"
+    !$cmd

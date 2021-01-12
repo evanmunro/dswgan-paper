@@ -1,0 +1,14 @@
+
+\begin{tabular}{lrrr}
+\toprule
+dataset & exp & cps & psid\\
+\midrule
+Real, Linear & -0.0490517 & 0.4745933 & 0.5685146\\
+Real, Random Forest & -0.0652141 & 0.4758563 & 0.5711419\\
+Real, Neural Network & 0.0000000 & 0.0000000 & 0.0000000\\
+Gen, Linear & 0.0998410 & 0.4660019 & 0.6086767\\
+Gen, Random Forest & 0.0889807 & 0.4913224 & 0.6709930\\
+\addlinespace
+Gen, Neural Network & 0.0000000 & 0.0000000 & 0.0000000\\
+\bottomrule
+\end{tabular}

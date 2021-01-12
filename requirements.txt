@@ -1,0 +1,8 @@
+numpy
+torch
+pandas
+matplotlib
+pyarrow
+POT
+git+https://github.com/gsbDBI/ds-wgan.git
+git+https://github.com/gbaydin/hypergradient-descent.git

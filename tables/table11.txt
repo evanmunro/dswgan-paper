@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering\begin{table}[H]
+\centering
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{9}{c}{rmse} \\
+\cmidrule(l{3pt}r{3pt}){2-10}
+method & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 & 1.0\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Baselines}}\\
+\hspace{1em}DIFF & 10.17 & 10.84 & 9.88 & 10.09 & 11.10 & 10.45 & 10.41 & 10.55 & 11.12\\
+\hspace{1em}BCM & 0.60 & 0.73 & 0.64 & 0.72 & 0.78 & 0.71 & 0.72 & 0.65 & 0.73\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Outcome Models}}\\
+\hspace{1em}L & 1.87 & 0.70 & 0.48 & 0.46 & 1.37 & 1.31 & 0.52 & 1.52 & 2.14\\
+\hspace{1em}RF & 0.62 & 0.62 & 0.73 & 0.84 & 0.94 & 0.97 & 0.61 & 1.28 & 1.00\\
+\hspace{1em}NN & 0.54 & 0.74 & 0.58 & 0.60 & 0.68 & 0.59 & 0.54 & 0.79 & 0.63\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Propensity Score Models}}\\
+\hspace{1em}L & 0.74 & 0.66 & 0.49 & 0.76 & 0.60 & 0.53 & 0.49 & 1.37 & 0.51\\
+\hspace{1em}RF & 0.94 & 0.71 & 0.69 & 1.06 & 1.10 & 1.08 & 0.89 & 1.49 & 1.00\\
+\hspace{1em}NN & 0.54 & 0.71 & 0.57 & 0.59 & 0.68 & 0.56 & 0.61 & 0.59 & 0.65\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Doubly Robust Methods}}\\
+\hspace{1em}L & 0.69 & 0.67 & 0.49 & 0.72 & 0.60 & 0.54 & 0.49 & 1.34 & 0.53\\
+\hspace{1em}RF & 0.48 & 0.70 & 0.49 & 0.53 & 0.63 & 0.53 & 0.49 & 0.70 & 0.54\\
+\hspace{1em}NN & 0.51 & 0.68 & 0.57 & 0.58 & 0.67 & 0.57 & 0.58 & 0.55 & 0.62\\
+\hspace{1em}CF & 0.49 & 0.69 & 0.54 & 0.50 & 0.66 & 0.53 & 0.53 & 0.61 & 0.55\\
+\hspace{1em}RB & 1.41 & 0.82 & 0.52 & 0.49 & 0.62 & 0.56 & 0.50 & 1.20 & 0.57\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{table}

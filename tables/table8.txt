@@ -1,0 +1,34 @@
+\begin{table}[H]
+\centering\begin{table}[H]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{5}{c}{psid} \\
+\cmidrule(l{3pt}r{3pt}){2-6}
+method & rmse & bias & sdev & coverage & power\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{6}{l}{\textbf{Baselines}}\\
+\hspace{1em}DIFF & 18.81 & -18.81 & 0.53 & 0.00 & 0.00\\
+\hspace{1em}BCM & 0.98 & -0.02 & 0.98 & 0.98 & 0.98\\
+\addlinespace[0.3em]
+\multicolumn{6}{l}{\textbf{Outcome Models}}\\
+\hspace{1em}L & 1.95 & -1.82 & 0.72 & 0.12 & 0.67\\
+\hspace{1em}RF & 2.30 & -2.22 & 0.62 & 0.02 & 0.47\\
+\hspace{1em}NN & 2.97 & -0.93 & 2.82 & 0.59 & 0.88\\
+\addlinespace[0.3em]
+\multicolumn{6}{l}{\textbf{Propensity Score Models}}\\
+\hspace{1em}L & 1.11 & -0.64 & 0.91 & 0.96 & 0.94\\
+\hspace{1em}RF & 2.21 & -2.05 & 0.82 & 0.32 & 0.55\\
+\hspace{1em}NN & 1.82 & -1.43 & 1.11 & 0.69 & 0.76\\
+\addlinespace[0.3em]
+\multicolumn{6}{l}{\textbf{Doubly Robust Methods}}\\
+\hspace{1em}L & 0.98 & -0.35 & 0.92 & 0.94 & 0.97\\
+\hspace{1em}RF & 0.98 & -0.57 & 0.80 & 0.84 & 0.97\\
+\hspace{1em}NN & 0.98 & -0.38 & 0.90 & 0.92 & 0.97\\
+\hspace{1em}CF & 1.13 & -0.89 & 0.69 & 0.73 & 0.96\\
+\hspace{1em}RB & 1.06 & 0.33 & 1.01 & 0.75 & 0.99\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{table}
