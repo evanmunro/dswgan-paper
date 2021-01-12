@@ -40,6 +40,8 @@ Rscript check_dependencies.R
 The simulated datasets are too large to be hosted on Github. The empty folder in `data/generated/`
 must be filled with the contents of the following Google Drive [folder](https://drive.google.com/drive/folders/1y3xPsnlMlNZPYltMDUeJssSjUOOmHiW3?usp=sharing) before running any replication steps.
 
+The results of the Monte Carlo Simulations are also large files. As a result, the empty folder in `att_comparison/generated` must be filled with the contents of the following second Google Drive [folder]((https://drive.google.com/drive/folders/1CCU1zuibrPOZHK6NAAAVrX5TKQZZOMTF?usp=sharing). 
+
 ### Replication Summary
 
 The replication is separated into a series of steps. We first describe how to replicate the exact figures and tables in the paper from intermediate output. We then proceed to describe the steps for reproducing the intermediate output, including estimating WGANs to simulate data and estimating treatment effects on samples of simulated data. Due to random variation in the training of the GANs and samples from the GANs, the intermediate output will not be replicated exactly, but the tables and figures produced from new intermediate output will be similar to those in the paper.

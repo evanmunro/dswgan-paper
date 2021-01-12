@@ -175,4 +175,4 @@ with open('tables/table3.txt','w') as tf:
 #Figures 4 and 5: Enforcing Monotonicity
 ########################################################################
 import os
-os.system('python monotonicity_penalty/monotonicity.py')
+os.system('python3 monotonicity_penalty/monotonicity.py')

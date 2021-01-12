@@ -2,8 +2,8 @@
 \toprule
 Dataset &  WD, GAN Simulation &  WD, MVN Simulation &  Ratio \\
 \midrule
-    exp &                1656 &                4987 &   0.33 \\
-    cps &                1643 &                5054 &   0.33 \\
-   psid &                3316 &                5554 &   0.60 \\
+    exp &                1639 &                5049 &   0.32 \\
+    cps &                1641 &                5084 &   0.32 \\
+   psid &                3242 &                5542 &   0.59 \\
 \bottomrule
 \end{tabular}
